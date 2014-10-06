@@ -1,0 +1,24 @@
+Arts to do :
+
+Tiles for the background 
+
+- room corners (4)
+- walls (2 or 3 differents) 1 for each side
+- floor tiles (2 or 3 differents)
+
+Tiles for objects
+
+- Door tile
+- Furnitures (Bed, wardrobe, chair, table, bookshelf)
+- Pressureplate tile
+
+Character
+
+- moving animation (4 frame for each direction)
+- death animation 
+
+Screen :
+
+- Menu screen 
+- Credit screen
+- How to play screen (optional)

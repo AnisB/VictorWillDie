@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="15" tilewidth="48" tileheight="48">
+ <tileset firstgid="1" name="caillous" tilewidth="24" tileheight="24">
+  <image source="../Images/caillous.png" trans="ffffff" width="504" height="384"/>
+ </tileset>
+ <tileset firstgid="337" name="snowmoda4chipsalaurabe" tilewidth="48" tileheight="48">
+  <image source="../Images/snowmoda4chipsalaurabe.png" trans="ffffff" width="96" height="240"/>
+ </tileset>
+ <tileset firstgid="347" name="tilebsnowmodalaurable" tilewidth="48" tileheight="48">
+  <image source="../Images/tilebsnowmodalaurable.png" trans="ffffff" width="768" height="768"/>
+ </tileset>
+ <tileset firstgid="603" name="Hanzo-SnowfieldSetVS-1" tilewidth="48" tileheight="48">
+  <image source="../Images/Hanzo-SnowfieldSetVS-1.png" width="768" height="768"/>
+ </tileset>
+ <layer name="fondblanc" width="25" height="15">
+  <data encoding="csv">
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,
+603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603,603
+</data>
+ </layer>
+ <layer name="decor" width="25" height="15">
+  <data encoding="csv">
+0,639,640,641,642,716,716,0,0,761,762,716,716,716,716,716,0,0,639,640,639,640,0,0,836,
+0,0,0,0,0,0,0,0,0,777,778,606,606,606,606,606,0,622,606,606,606,606,606,622,0,
+0,0,0,0,0,0,0,0,0,606,606,622,0,0,0,622,606,606,0,0,0,0,0,0,0,
+790,616,0,0,0,622,0,0,0,809,810,0,0,0,671,0,0,0,0,610,0,0,0,0,0,
+806,632,0,0,836,0,0,0,0,603,0,0,0,0,0,0,0,0,745,626,0,0,0,0,0,
+838,716,0,0,835,0,0,0,0,0,0,0,668,0,0,0,0,0,761,762,0,0,0,663,664,
+637,637,0,0,790,0,0,0,0,0,668,0,0,0,0,0,0,0,777,778,0,0,0,679,680,
+641,642,0,0,806,0,0,0,0,0,0,0,0,0,0,0,0,0,793,794,0,0,0,695,696,
+641,642,0,0,0,0,0,790,0,0,0,0,0,0,0,0,0,0,809,810,0,0,0,711,712,
+610,635,0,0,835,0,0,806,639,640,716,716,0,0,610,716,0,0,0,0,637,0,0,625,728,
+626,0,0,0,0,0,0,0,0,0,0,0,0,0,626,0,651,653,637,637,0,0,0,0,610,
+610,0,0,0,0,0,0,0,0,0,0,651,652,652,653,0,667,669,0,0,0,0,0,0,626,
+626,0,0,0,0,0,0,0,0,0,651,670,687,686,671,652,670,669,0,0,0,0,0,0,0,
+0,659,660,661,662,0,0,0,0,0,683,684,685,683,637,668,668,669,641,642,0,0,651,652,652,
+0,675,676,677,678,716,0,639,640,0,0,716,0,0,625,637,641,642,653,0,0,836,667,668,668
+</data>
+ </layer>
+ <layer name="Calque 3" width="25" height="15">
+  <data encoding="csv">
+837,0,0,0,0,0,0,641,642,761,762,0,0,0,0,0,641,642,0,0,0,0,0,0,0,
+610,0,0,0,0,0,0,0,0,777,778,0,0,0,0,0,0,0,0,0,0,0,0,0,610,
+626,0,0,622,606,606,656,0,606,793,794,0,651,652,653,0,0,0,624,0,0,0,0,0,626,
+790,0,0,622,0,0,606,606,606,0,0,0,667,668,654,653,0,0,0,610,0,0,0,616,610,
+822,0,606,606,0,0,0,0,0,603,0,651,670,668,687,685,0,656,0,746,637,0,0,632,626,
+0,0,622,0,659,660,661,662,0,651,652,670,819,668,669,0,0,0,0,0,651,652,653,0,0,
+0,0,622,0,675,676,677,678,0,667,819,687,684,686,671,652,652,653,0,0,667,687,685,0,0,
+0,0,606,606,691,692,693,694,0,683,686,669,0,683,684,684,684,685,0,0,683,685,0,0,0,
+0,0,624,622,707,708,709,710,0,0,683,685,0,0,0,0,0,0,0,0,0,0,0,609,0,
+0,0,0,622,723,724,725,726,0,0,0,0,641,642,0,0,637,637,639,640,0,0,0,0,0,
+0,0,0,622,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,610,
+0,0,0,606,606,606,606,606,0,638,0,0,0,0,0,0,0,0,0,0,0,0,0,0,790,
+0,0,0,0,0,0,0,622,606,606,0,0,0,0,0,0,0,0,0,0,0,0,0,0,806,
+610,0,0,0,0,0,616,0,0,0,0,0,0,0,609,0,0,0,0,0,0,0,0,0,635,
+626,0,0,0,0,0,632,0,0,641,642,0,641,642,0,0,0,0,0,641,642,0,837,849,850
+</data>
+ </layer>
+ <objectgroup color="#000000" draworder="topdown" name="wall" width="25" height="15">
+  <object x="0" y="0" width="1056" height="48"/>
+  <object x="0" y="48" width="48" height="672"/>
+  <object x="48" y="672" width="1152" height="48"/>
+  <object x="1152" y="0" width="48" height="672"/>
+  <object x="1104" y="192" width="48" height="48"/>
+  <object x="912" y="144" width="48" height="336"/>
+  <object x="960" y="192" width="48" height="48"/>
+  <object x="240" y="432" width="672" height="48"/>
+  <object x="192" y="192" width="48" height="288"/>
+  <object x="960" y="432" width="48" height="48"/>
+  <object x="1104" y="432" width="48" height="48"/>
+  <object x="864" y="480" width="96" height="48"/>
+  <object x="672" y="480" width="48" height="48"/>
+  <object x="672" y="624" width="48" height="48"/>
+  <object x="864" y="624" width="96" height="48"/>
+  <object x="48" y="192" width="48" height="288"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" draworder="topdown" name="spawn" width="25" height="15">
+  <object x="1056" y="96" width="48" height="48"/>
+ </objectgroup>
+ <objectgroup color="#ffcc66" draworder="topdown" name="key" width="25" height="15"/>
+ <objectgroup color="#804000" draworder="topdown" name="door" width="25" height="15">
+  <object x="1056" y="0" width="96" height="12">
+   <properties>
+    <property name="color" value="255#255#180"/>
+    <property name="id" value="1"/>
+    <property name="teleport" value="map6#3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" draworder="topdown" name="booleandoor" width="25" height="15">
+  <object x="672" y="528" width="48" height="96">
+   <properties>
+    <property name="color" value="155#80#10"/>
+    <property name="id" value="C0"/>
+   </properties>
+  </object>
+  <object x="1008" y="432" width="96" height="48">
+   <properties>
+    <property name="color" value="155#10#80"/>
+    <property name="id" value="B0"/>
+   </properties>
+  </object>
+  <object x="864" y="528" width="48" height="96">
+   <properties>
+    <property name="color" value="155#80#10"/>
+    <property name="id" value="C1"/>
+    <property name="open" value="true"/>
+   </properties>
+  </object>
+  <object x="912" y="528" width="48" height="96">
+   <properties>
+    <property name="color" value="155#10#80"/>
+    <property name="id" value="B1"/>
+    <property name="open" value="true"/>
+   </properties>
+  </object>
+  <object x="912" y="48" width="48" height="96">
+   <properties>
+    <property name="color" value="155#10#155"/>
+    <property name="id" value="G0"/>
+   </properties>
+  </object>
+  <object x="96" y="432" width="96" height="48">
+   <properties>
+    <property name="color" value="255#0#0"/>
+    <property name="id" value="F1"/>
+    <property name="open" value="true"/>
+   </properties>
+  </object>
+  <object x="96" y="192" width="96" height="48">
+   <properties>
+    <property name="color" value="0#0#255"/>
+    <property name="id" value="D0"/>
+   </properties>
+  </object>
+  <object x="96" y="240" width="96" height="48">
+   <properties>
+    <property name="color" value="0#255#0"/>
+    <property name="id" value="E0"/>
+   </properties>
+  </object>
+  <object x="96" y="288" width="96" height="48">
+   <properties>
+    <property name="color" value="255#0#0"/>
+    <property name="id" value="F0"/>
+   </properties>
+  </object>
+  <object x="96" y="336" width="96" height="48">
+   <properties>
+    <property name="color" value="0#0#255"/>
+    <property name="id" value="D1"/>
+    <property name="open" value="true"/>
+   </properties>
+  </object>
+  <object x="96" y="384" width="96" height="48">
+   <properties>
+    <property name="color" value="0#255#0"/>
+    <property name="id" value="E1"/>
+    <property name="open" value="true"/>
+   </properties>
+  </object>
+  <object x="1008" y="192" width="96" height="48">
+   <properties>
+    <property name="color" value="155#80#80"/>
+    <property name="id" value="7"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#408000" draworder="topdown" name="switch" width="25" height="15">
+  <object x="1056" y="336" width="48" height="48">
+   <properties>
+    <property name="close" value="B1"/>
+    <property name="color" value="155#10#80"/>
+    <property name="delay" value="2"/>
+    <property name="open" value="B0"/>
+   </properties>
+  </object>
+  <object x="1056" y="576" width="48" height="48">
+   <properties>
+    <property name="close" value="C1"/>
+    <property name="color" value="155#80#10"/>
+    <property name="delay" value="2"/>
+    <property name="open" value="C0"/>
+   </properties>
+  </object>
+  <object x="96" y="576" width="48" height="48">
+   <properties>
+    <property name="close" value="D1"/>
+    <property name="color" value="0#0#255"/>
+    <property name="delay" value="3"/>
+    <property name="open" value="D0"/>
+   </properties>
+  </object>
+  <object x="192" y="576" width="48" height="48">
+   <properties>
+    <property name="close" value="E1"/>
+    <property name="color" value="0#255#0"/>
+    <property name="delay" value="3"/>
+    <property name="open" value="E0"/>
+   </properties>
+  </object>
+  <object x="288" y="576" width="48" height="48">
+   <properties>
+    <property name="close" value="F1"/>
+    <property name="color" value="255#0#0"/>
+    <property name="delay" value="3"/>
+    <property name="open" value="F0"/>
+   </properties>
+  </object>
+  <object x="576" y="336" width="48" height="48">
+   <properties>
+    <property name="close" value="G1"/>
+    <property name="color" value="155#10#155"/>
+    <property name="delay" value="2"/>
+    <property name="open" value="G0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffffff" draworder="topdown" name="pressureplate" width="25" height="15"/>
+ <objectgroup color="#800000" draworder="topdown" name="caillou" width="25" height="15">
+  <object x="720" y="240" width="48" height="48"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="15" tilewidth="48" tileheight="48">
+ <tileset firstgid="1" name="fond" tilewidth="32" tileheight="32" spacing="2">
+  <image source="../Code/image/fond.png" trans="ffffff" width="1200" height="720"/>
+ </tileset>
+ <layer name="Calque de Tile 1" width="25" height="15">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#000000" name="wall" width="25" height="15">
+  <object x="0" y="0" width="1200" height="48"/>
+  <object x="0" y="48" width="48" height="672"/>
+  <object x="48" y="672" width="1152" height="48"/>
+  <object x="1152" y="48" width="48" height="624"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" name="spawn" width="25" height="15">
+  <object x="816" y="192" width="48" height="48"/>
+ </objectgroup>
+ <objectgroup color="#ffcc66" name="key" width="25" height="15">
+  <object x="1104" y="624" width="48" height="48">
+   <properties>
+    <property name="id" value="7"/>
+    <property name="open" value="107"/>
+   </properties>
+  </object>
+  <object x="144" y="624" width="48" height="48">
+   <properties>
+    <property name="id" value="6"/>
+    <property name="open" value="106"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#804000" name="door" width="25" height="15">
+  <object x="144" y="96" width="96" height="48">
+   <properties>
+    <property name="id" value="107"/>
+    <property name="teleport" value="maptest2#1"/>
+   </properties>
+  </object>
+  <object x="960" y="96" width="96" height="48">
+   <properties>
+    <property name="id" value="106"/>
+    <property name="teleport" value="maptest1#2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#408000" name="switch" width="25" height="15"/>
+ <objectgroup color="#ff00ff" name="magic" width="25" height="15"/>
+</map>

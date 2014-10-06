@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="15" tilewidth="48" tileheight="48">
+ <tileset firstgid="1" name="fond" tilewidth="32" tileheight="32" spacing="2">
+  <image source="../Code/image/fond.png" trans="ffffff" width="1200" height="720"/>
+ </tileset>
+ <tileset firstgid="736" name="caillous" tilewidth="24" tileheight="24">
+  <image source="../Images/caillous.png" trans="ffffff" width="504" height="384"/>
+ </tileset>
+ <tileset firstgid="1072" name="Hanzo-SnowfieldSetVS-1" tilewidth="48" tileheight="48">
+  <image source="../Images/Hanzo-SnowfieldSetVS-1.png" trans="ffffff" width="768" height="768"/>
+ </tileset>
+ <tileset firstgid="1328" name="snowmoda4chipsalaurabe" tilewidth="48" tileheight="48">
+  <image source="../Images/snowmoda4chipsalaurabe.png" trans="ffffff" width="96" height="240"/>
+ </tileset>
+ <tileset firstgid="1338" name="tilebsnowmodalaurable" tilewidth="48" tileheight="48">
+  <image source="../Images/tilebsnowmodalaurable.png" trans="ffffff" width="768" height="768"/>
+ </tileset>
+ <layer name="Calque de Tile 1" width="25" height="15">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#000000" name="wall" width="25" height="15">
+  <object x="0" y="0" width="1200" height="48"/>
+  <object x="0" y="48" width="48" height="672"/>
+  <object x="48" y="672" width="1152" height="48"/>
+  <object x="1152" y="48" width="48" height="624"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" name="spawn" width="25" height="15">
+  <object x="144" y="480" width="48" height="48"/>
+ </objectgroup>
+ <objectgroup color="#ffcc66" name="key" width="25" height="15">
+  <object x="144" y="336" width="48" height="48">
+   <properties>
+    <property name="id" value="1"/>
+    <property name="open" value="101"/>
+   </properties>
+  </object>
+  <object x="432" y="336" width="48" height="48">
+   <properties>
+    <property name="id" value="2"/>
+   </properties>
+  </object>
+  <object x="384" y="384" width="48" height="48">
+   <properties>
+    <property name="id" value="3"/>
+    <property name="open" value="102"/>
+   </properties>
+  </object>
+  <object x="480" y="384" width="48" height="48">
+   <properties>
+    <property name="id" value="4"/>
+   </properties>
+  </object>
+  <object x="432" y="432" width="48" height="48">
+   <properties>
+    <property name="id" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#804000" name="door" width="25" height="15">
+  <object x="144" y="192" width="96" height="48">
+   <properties>
+    <property name="id" value="101"/>
+    <property name="teleport" value="maptest2#1"/>
+   </properties>
+  </object>
+  <object x="432" y="192" width="96" height="48">
+   <properties>
+    <property name="id" value="102"/>
+    <property name="teleport" value="maptest3#1"/>
+   </properties>
+  </object>
+  <object x="672" y="192" width="96" height="48">
+   <properties>
+    <property name="id" value="103"/>
+    <property name="teleport" value="maptest4#1"/>
+   </properties>
+  </object>
+  <object x="912" y="192" width="96" height="48">
+   <properties>
+    <property name="id" value="104"/>
+    <property name="teleport" value="maptest5#1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" name="booleandoor" width="25" height="15">
+  <object x="336" y="48" width="48" height="240">
+   <properties>
+    <property name="id" value="501"/>
+   </properties>
+  </object>
+  <object x="576" y="48" width="48" height="240">
+   <properties>
+    <property name="id" value="501"/>
+   </properties>
+  </object>
+  <object x="384" y="240" width="192" height="48">
+   <properties>
+    <property name="id" value="501"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#408000" name="switch" width="25" height="15">
+  <object x="672" y="432" width="48" height="48">
+   <properties>
+    <property name="close" value=""/>
+    <property name="delay" value="2"/>
+    <property name="id" value="201"/>
+    <property name="open" value="501"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" name="magic" width="25" height="15">
+  <object x="960" y="288" width="48" height="48">
+   <properties>
+    <property name="id" value="301"/>
+    <property name="if" value="202,203,204,205"/>
+    <property name="open" value="104"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffffff" name="pressureplate" width="25" height="15">
+  <object x="864" y="576" width="48" height="48">
+   <properties>
+    <property name="close" value="501"/>
+    <property name="open" value="103"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#800000" name="caillou" width="25" height="15">
+  <object x="1056" y="432" width="48" height="48"/>
+  <object x="1104" y="480" width="48" height="48"/>
+  <object x="1056" y="528" width="48" height="48"/>
+  <object x="1104" y="576" width="48" height="48"/>
+  <object x="1056" y="624" width="48" height="48"/>
+  <object x="1104" y="384" width="48" height="48"/>
+ </objectgroup>
+</map>

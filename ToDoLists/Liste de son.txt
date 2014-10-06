@@ -1,0 +1,15 @@
+Liste de sons indispensables:
+
+- ouverture de porte 
+- bruit de pas
+- son de mort
+
+Musiques indispensables:
+
+- musique d'ambiance (theme principal)
+- musique de game over
+
+Sons additionnels :
+
+- bruit de fouille
+- deverouillage de porte
