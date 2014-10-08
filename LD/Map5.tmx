@@ -177,12 +177,5 @@
   </object>
  </objectgroup>
  <objectgroup draworder="topdown" name="endgame" width="25" height="15"/>
- <objectgroup draworder="topdown" name="key" width="25" height="15">
-  <object x="982" y="446" width="48" height="48">
-   <properties>
-    <property name="id" value="key"/>
-    <property name="open" value="99"/>
-   </properties>
-  </object>
- </objectgroup>
+ <objectgroup draworder="topdown" name="key" width="25" height="15"/>
 </map>

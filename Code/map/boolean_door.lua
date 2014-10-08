@@ -13,6 +13,7 @@ function BooleanDoor.new(position, dimension, physics, id, isOpen, colorCode, sp
     self.height = dimension.h
     self.id = id
     self.hitbox = Hitbox.new(self.position.x, self.position.y, self.width, self.height)
+    self.special = special
     if(special=="true") then
         physics:insertDoorActor(self.hitbox)
     else
@@ -20,12 +21,18 @@ function BooleanDoor.new(position, dimension, physics, id, isOpen, colorCode, sp
     end
 
     self.horizontal = (self.width>self.height)
-    if self.horizontal then
-        self.close = love.graphics.newImage('image/door_horizontal_close.png')
-        self.open = love.graphics.newImage('image/door_horizontal_open.png')
+    if(special=="true") then
+        self.close = love.graphics.newImage('image/specialDoorClose.png')
+        self.open = love.graphics.newImage('image/specialDoorOpen.png')
     else
-        self.close = love.graphics.newImage('image/door_vertical_close.png')
-        self.open = love.graphics.newImage('image/door_vertical_open.png')    
+
+        if self.horizontal then
+            self.close = love.graphics.newImage('image/door_horizontal_close.png')
+            self.open = love.graphics.newImage('image/door_horizontal_open.png')
+        else
+            self.close = love.graphics.newImage('image/door_vertical_close.png')
+            self.open = love.graphics.newImage('image/door_vertical_open.png')    
+        end
     end
     self.sprite = self.close
 
@@ -55,9 +62,17 @@ function BooleanDoor:draw()
     -- love.graphics.rectangle( 'fill', self.position.x, self.position.y, self.width, self.height )
     -- love.graphics.setColor( 255, 255, 255, 255 )
     
-   love.graphics.setColor(self.colors.r,self.colors.g,self.colors.b,255)
+
+
+    if (self.special) then
+       love.graphics.setColor(self.colors.r,self.colors.g,self.colors.b,255)
+        love.graphics.draw( self.sprite, self.position.x + 5, self.position.y-unitWorldSize)
+        love.graphics.setColor(255,255,255,255)
+    else
+    love.graphics.setColor(self.colors.r,self.colors.g,self.colors.b,255)
     love.graphics.draw( self.sprite, self.position.x, self.position.y)
     love.graphics.setColor(255,255,255,255)
+    end
 end
 
 function BooleanDoor:activate()

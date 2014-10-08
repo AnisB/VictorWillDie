@@ -46,7 +46,7 @@ function Key:draw()
         sprite = self.sprite
         scaleX = self.width / sprite:getWidth()
         scaleY = self.height / sprite:getHeight()
-        love.graphics.draw( self.sprite, self.position.x, self.position.y, 0, scaleX, scaleY )
+        love.graphics.draw( self.sprite, self.position.x, self.position.y, 0, scaleX, scaleY/1.5 )
     end
     -- print(self.sprite)
     -- love.graphics.draw( self.sprite, self.position.x, self.position.y, 0, 1, 1 )

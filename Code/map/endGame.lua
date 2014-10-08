@@ -17,7 +17,6 @@ end
 
 function EndGame:handleTry(tryer)
 	if(self.hitbox:collision(tryer.hitbox)) then
-		s_soundManager:playMusic(musics.final)
 		s_gameStateManager:changeState('TheEnd')
 	end
 end

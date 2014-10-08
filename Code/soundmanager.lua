@@ -15,11 +15,11 @@ sounds = {	death = 'death',
 			footstep3 = 'footstep3',
 			footstep4 = 'footstep4',
 			manivelle = 'manivelle',
-			cold = 'cold'
+			cold = 'cold',
+			final = 'final',
 }
 musics = {	theme = 'theme',
-			intro = 'intro',
-			final = 'final'
+			intro = 'intro'
 }
 
 function SoundManager.new()
@@ -29,7 +29,6 @@ function SoundManager.new()
   self.music_list = {}
   self.music_list[musics.theme] = love.audio.newSource('sound/theme.ogg')
   self.music_list[musics.intro] = love.audio.newSource('sound/intro.ogg')
-  self.music_list[musics.final] = love.audio.newSource('sound/final.ogg')
   self.current_music = self.music_list[musics.intro]
   
   self.sound_list = {}
@@ -45,6 +44,8 @@ function SoundManager.new()
   self.sound_list[sounds.footstep3] = love.audio.newSource('sound/footsteps_3.ogg',"static")
   self.sound_list[sounds.footstep4] = love.audio.newSource('sound/footsteps_4.ogg',"static")
   self.sound_list[sounds.manivelle] = love.audio.newSource('sound/manivelle.ogg',"static")
+  self.sound_list[sounds.final] = love.audio.newSource('sound/final.ogg',"static")
+
   return self
 end
 

@@ -284,7 +284,7 @@ function Gameplay:draw()
 
     love.graphics.setColor(255,0,0,255)
     love.graphics.print("Score "..self.deathCounter,10,10)
-    love.graphics.print("Time "..self.time,1100,10)
+    love.graphics.print("Time "..math.floor(self.time),1100,10)
     love.graphics.setColor(255,255,255,255)
 
 

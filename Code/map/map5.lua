@@ -616,23 +616,7 @@ return {
       visible = true,
       opacity = 1,
       properties = {},
-      objects = {
-        {
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 982,
-          y = 446,
-          width = 48,
-          height = 48,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["id"] = "key",
-            ["open"] = "99"
-          }
-        }
-      }
+      objects = {}
     }
   }
 }
