@@ -47,6 +47,8 @@ function Physics:testCollision(dt)
 	-- for i,animated in pairs(self.animated_actors) do
 	if (self.hitbox_player) then
 		self.error_with_collisions = false
+		error_with_collision_fixed = false
+		error_with_collision_door = false
 		animated = self.hitbox_player
 		-- print ("object "..tostring(i).." "..tostring(animated))
 		collision_flag = false
@@ -80,7 +82,7 @@ function Physics:testCollision(dt)
 				animated.position.x = temp_position.x
 				animated.position.y = temp_position.y
 				if animated:collision(fixed) then
-					self.error_with_collisions = true
+					error_with_collision_fixed = true
 						-- print ("collision error with fixed object")
 					-- print ("collision x fixed")
 				end
@@ -108,7 +110,7 @@ function Physics:testCollision(dt)
 					animated.position.x = temp_position.x
 					animated.position.y = temp_position.y
 					if animated:collision(door) then
-						self.error_with_collisions = true
+						error_with_collision_door = true
 						-- print ("collision error door")
 					end
 				end
@@ -136,6 +138,10 @@ function Physics:testCollision(dt)
 				animated.position.y = temp_position.y
 				-- print("returning to x and y "..tostring(animated.position.x).." "..tostring(animated.position.y))
 			end
+		end
+
+		if error_with_collision_door and error_with_collision_fixed then
+			self.error_with_collisions = true
 		end
 		
 		--Collisions for objects that the character interacts with

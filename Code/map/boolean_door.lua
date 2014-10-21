@@ -14,11 +14,11 @@ function BooleanDoor.new(position, dimension, physics, id, isOpen, colorCode, sp
     self.id = id
     self.hitbox = Hitbox.new(self.position.x, self.position.y, self.width, self.height)
     self.special = special
-    if(special=="true") then
+    -- if(special=="true") then
         physics:insertDoorActor(self.hitbox)
-    else
+    -- else
         physics:insertStaticActor(self.hitbox)
-    end
+    -- end
 
     self.horizontal = (self.width>self.height)
     if(special=="true") then
