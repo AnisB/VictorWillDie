@@ -8,6 +8,7 @@ require("inputmanager")
 require("soundmanager")
 
 function love.load()
+	love.window.setIcon( love.image.newImageData("image/icon/vwd_icn.png" ))
 	s_inputManager:Init()
 	s_soundManager:Init()
 end
